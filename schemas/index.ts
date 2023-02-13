@@ -1,2 +1,4 @@
 import jobs from './jobs';
-export const schemaTypes = [jobs];
+import education from './education';
+
+export const schemaTypes = [jobs, education];
