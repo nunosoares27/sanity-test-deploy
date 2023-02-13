@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "sanity dev",
     "start": "sanity start",
-    "build": "sanity build",
+    "build": "sanity build public -y",
     "deploy": "sanity deploy",
     "deploy-graphql": "sanity graphql deploy"
   },
@@ -23,6 +23,7 @@
     "styled-components": "^5.2.0"
   },
   "devDependencies": {
+    "@sanity/cli": "^3.3.1",
     "@sanity/eslint-config-studio": "^2.0.1",
     "eslint": "^8.6.0",
     "prettier": "^2.8.4",
