@@ -1,9 +1,16 @@
-# Sanity Clean Content Studio
+# Example of query to get jobs
 
-Congratulations, you have now installed the Sanity Content Studio, an open source real-time content editing environment connected to the Sanity backend.
+```
+*[_type == "jobs"]{
+  _id,
+  name,
+  description,
+  startDate,
+  endDate,
+  created_at,
+  edited_at,
+  "image": image.asset->url,
+  "caption": image.caption
+}
+```
 
-Now you can do the following things:
-
-- [Read “getting started” in the docs](https://www.sanity.io/docs/introduction/getting-started?utm_source=readme)
-- [Join the community Slack](https://slack.sanity.io/?utm_source=readme)
-- [Extend and build plugins](https://www.sanity.io/docs/content-studio/extending?utm_source=readme)
